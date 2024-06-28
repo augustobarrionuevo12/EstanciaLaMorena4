@@ -3,32 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root{
-    scroll-behavior: smooth; /* esto logra que al hacer click en algun objeto del menu de navegación la pagina baje hasta ahi! */
+    scroll-behavior: smooth; /* esto logra que al hacer click en algun objeto del menu de navegación la página baje hasta ahí */
 }
 
 body {
-    font-family: 'nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 100;
+    background-color: #f5ebdc; /* Beige */
+    color: #4B371C; /* Marrón oscuro */
 }
 
 .contenedor {
     width: 90%;
     max-width: 1200px;
     overflow: hidden;
-    /*esto es para que todo lo que esta fuera del contenedor se oculte */
+    /*esto es para que todo lo que está fuera del contenedor se oculte */
     margin: auto;
     padding: 60px 0;
 }
+
 header {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(123, 102, 58, 0.452) 0%, rgba(80, 75, 71, 0.107) 100%), url(../recursos/estanciaInicio1.jpg);
+    background-image: linear-gradient(to right, rgba(61, 60, 57, 0.452) 0%, rgba(63, 60, 58, 0.107) 100%), url(../recursos/paisajeInicioEdit.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
-.head{
+
+.head {
     text-align: center;
     padding: 0;
     height: 100%;
@@ -36,13 +41,14 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: #FFF8DC; /* Blanco antiguo */
 }
-.hamburger{
+
+.hamburger {
     position: fixed; /* esto hace que un objeto quede fijo en la página aunque nosotros hagamos scroll */
     top: 30px;
     right: 30px;
-    background: white;
+    background: #D2B48C; /* Tostado */
     width: 40px;
     height: 40px;
     cursor: pointer; /* hace que al posar el mouse se cambie a la manito */
@@ -50,13 +56,13 @@ header {
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-.menuNavegacion{
+.menuNavegacion {
     position: fixed;
     top: 0;
     right: 0;
     width: 30vw;
     height: 100%;
-    background-image: linear-gradient(to top, #281606 0%, #503409 100%);
+    background-image: linear-gradient(to top, #56504b 0%, #3f3830 100%); /* Marrones */
     display: flex;
     flex-direction: column; /* para que estén uno debajo del otro */
     justify-content: space-evenly; /* los centrará verticalmente */
@@ -65,65 +71,81 @@ header {
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-.spread{
+.spread {
     transform: translate(0); /* esto es para que los elementos aparezcan */
 }
 
-.menuNavegacion a{
-    color: rgb(255, 255, 255);
+.menuNavegacion a {
+    color: #FFF8DC; /* Blanco antiguo */
     text-decoration: none;
 }
-.tituloIndex{
-    font-family: 'nunito', sans-serif;
-    color: rgb(255, 255, 255);
+
+.tituloIndex {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF8DC; /* Blanco antiguo */
     font-size: 60px;
     margin-bottom: 15px;
     text-align: center;
 }
-.subtituloIndex{
-    font-family: 'nunito', sans-serif;
-    color: rgb(255, 255, 255);
+
+.subtituloIndex {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF8DC; /* Blanco antiguo */
     font-size: 40px;
     font-weight: 300;
 }
 
-/*   Servicio   */
+/* Servicio */
 
-.subtitulo{
+.subtitulo {
     text-align: center;
     font-weight: 300;
-    color: rgb(0, 0, 97);
+    color: #4B371C; /* Marrón oscuro */
     margin-bottom: 40px;
     font-size: 40px;
 }
-.contenedorServicio{
+.subtitulo2 {
+    text-align: center;
+    font-weight: 300;
+    color: #d3cbc1; /* Marrón oscuro */
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedorServicio {
     display: flex;
     justify-content: space-evenly; /* Espacio equitativo en el eje horizontal */
     align-items: center;
-    flex-wrap: wrap; /* si en algun momento no entran mas, que se pasen abajo */
+    flex-wrap: wrap; /* si en algún momento no entran más, que se pasen abajo */
     font-size: 20px;
     text-align: left;
 }
-.contenedorServicio img{
+
+.contenedorServicio img {
     width: 40%;
 }
-.checkListCostumer{
+
+.checkListCostumer {
     width: 45%;
 }
-.imagenHabitaciones{
+
+.imagenHabitaciones {
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
-.service{
+
+.service {
     margin-bottom: 20px;
 }
-.nService{
+
+.nService {
     margin-bottom: 7px;
-    color: rgb(0, 0, 0);
+    color: #494137; /* Marrón oscuro */
 }
-.number{
+
+.number {
     display: inline-block;
-    background-image: linear-gradient(to top, #000000 0%, #635437 100%); 
+    background-image: linear-gradient(to top, #5d544d 0%, #473c38 100%); /* Marrones */
     width: 32px;
     height: 32px;
     color: white;
@@ -135,18 +157,18 @@ header {
 
 /* PORTAFOLIO */
 
-
-.portafolio{
-    background: #f2f2f2;
+.portafolio {
+    background: #7a736f; /* Tostado */
     height: 100vh;
 }
-.contenedorGaleria{
+
+.contenedorGaleria {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
 }
-.imgGaleria{
+
+.imgGaleria {
     object-fit: cover;
     width: 32%;
     display: flex;
@@ -155,7 +177,7 @@ header {
     cursor: pointer;  
 }
 
-.imagenLight{
+.imagenLight {
     position: fixed;
     background: rgba(0, 0, 0, 0.6);
     width: 100%;
@@ -168,64 +190,70 @@ header {
     transform: translate(100%);
     transition: transform .2 ease-in-out;
 }
-.show{
+
+.show {
     transform: translate(0);
 }
 
-.agregarImagen{
+.agregarImagen {
     object-fit: cover;
     width: 60%;
     border-radius: 10px;
     transform: scale(0);
     transition: .3s .2s;
-    
 }
-.showImage{
+
+.showImage {
     transform: scale(1);
 }
-.close{
+
+.close {
     position: absolute;
     top: 15px;
     right: 15px;
     width: 40px;
     cursor: pointer;
-
 }
 
-/* CONTACTANOS : */
+/* CONTACTANOS */
 
-.SobreMi2{
+.SobreMi2 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    a{
-    color: #000000;
+}
+
+.SobreMi2 a {
+    color: #4B371C; /* Marrón oscuro */
     font-size: 20px;
 }
-}
-.contSobreMi{
+
+.contSobreMi {
     width: 30%;
     text-align: center;
     margin-bottom: 20px;
 }
-.contSobreMi img{
+
+.contSobreMi img {
     width: 30%;
     display: block;
     margin: 0 auto;
 }
 
-.nExpert{
+.nExpert {
     display: inline-block;
     margin-top: 20px;
     width: 100%;
     font-weight: 400;
 }
-footer{
-    background: #3f2809;
+
+footer {
+    background: #5b524c; /* Marrón */
     padding-bottom: 0.1px;
 }
-.footerContent{
+
+.footerContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -233,23 +261,28 @@ footer{
     padding-top: 60px;
     padding-bottom: 40px;
 }
-.contactUs{
+
+.contactUs {
     width: 40%;
-    color: white;
+    color: #FFF8DC; /* Blanco antiguo */
 }
-.brand{
+
+.brand {
     font-weight: 500;
     font-size: 40px;
 }
-.brand+p{
+
+.brand + p {
     font-weight: 500;
 }
-.socialMedia{
+
+.socialMedia {
     width: 50%;
     display: flex;
     justify-content: flex-end;
 }
-.socialMediaIcon{
+
+.socialMediaIcon {
     display: inline-block;
     margin-left: 20px;
     width: 50px;
@@ -259,16 +292,18 @@ footer{
     text-align: center;
     color: #fff;
 }
-.socialMediaIcon:hover{
+
+.socialMediaIcon:hover {
     background: #fff;
-    color: #0078d3;
+    color: #8B4513; /* Marrón */
 }
 
-.socialMediaIcon img{
+.socialMediaIcon img {
     font-size: 30px;
     line-height: 60px;
 }
-.line{
+
+.line {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -276,59 +311,71 @@ footer{
     background: #fff;
     margin-bottom: 60px;
 }
-.derechosReservados{
-    color: #6c6a66;
+
+.derechosReservados {
+    color: #b6b4b0;
     text-align: center;
 }
-.logoLaMorena{
+
+.logoLaMorena {
     width: 40px;
     margin-bottom: 30px;
 }
+
+.quienesSomos {
+    font-size: 20px;
+}
+
+.subtituloContactanos {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 300;
+    color: #4B371C; /* Marrón oscuro */
+    font-size: 40px;
+}
+
 /* responsive */
-@media screen and (max-width:800px){
-    .menuNavegacion{
+
+@media screen and (max-width: 800px) {
+    .menuNavegacion {
         width: 50vw;
     }
-    .tituloIndex{
+    .tituloIndex {
         font-size: 40px;
-
     }
-    .contenedorServicio img{
+    .contenedorServicio img {
         width: 80%;
         margin-bottom: 40px;
     }
-    .checkListCostumer{
+    .checkListCostumer {
         width: 80%;
     }
-    .service{
+    .service {
         margin-bottom: 40px;
     }
-    .agregarImagen{
+    .agregarImagen {
         width: 80%;
     }
-    .imgGaleria{
+    .imgGaleria {
         width: 45%;
     }
-    .contSobreMi{
+    .contSobreMi {
         width: 80%;
     }
-    .footerContent{
+    .footerContent {
         justify-content: center;
     }
-
-    .socialMedia{
+    .socialMedia {
         width: 80%;
         justify-content: space-evenly;
     }
-    .socialMedia img{
+    .socialMedia img {
         margin-left: 0;
     }
-    .contactUs{
+    .contactUs {
         text-align: center;
         width: 80%;
         margin-bottom: 40px;
     }
-
 }
-
-
